@@ -1,0 +1,36 @@
+const mongoose =require('mongoose');
+
+const RamySchema = new mongoose.Schema({
+    id:
+    {
+        type: Number
+    },
+    wysokosc:
+    {
+        type: Number
+    },
+    szerokosc:
+    {
+        type: Number
+    },
+    price:
+    {
+        type: Number
+    },
+    pole:
+    {
+        type: String
+    },
+    magazyn:
+    {
+        type: Number
+    },
+    czas:
+    {
+        type: Number
+    },
+})
+
+const rama =mongoose.model('Rama',RamySchema);
+
+module.exports = rama;
